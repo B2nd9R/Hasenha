@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="meta.page_title_faq">الأسئلة الشائعة | حصّنها | Hasenha</title>
+
+    <!-- Meta Tags -->
+    <meta name="description" data-i18n="meta.meta_description_faq" content="الأسئلة الشائعة - إجابات عن أداة توليد كلمات المرور حصّنها">
+    <meta property="og:title" data-i18n="meta.og_title_faq" content="الأسئلة الشائعة | حصّنها">
+    <meta property="og:description" data-i18n="meta.og_description_faq" content="إجابات عن الأسئلة المتكررة حول أداة توليد كلمات المرور">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="static/css/main.css">
+    <link rel="stylesheet" href="static/css/faq.css">
+</head>
+<body>
+  <!-- Animated Background -->
+  <div class="cyber-grid"></div>
+  <div class="floating-particles"></div>
+
+  <!-- Header -->
+  <header class="main-header" data-aos="fade-down">
+    <div class="logo-container">
+      <img src="assets/images/logo.png" alt="حصّنها | Hasenha Logo" class="logo-image">
+      <h1 class="logo-text">
+        <span class="arabic-name">حصّنها</span>
+        <span class="divider">|</span>
+        <span class="english-name">Hasenha</span>
+      </h1>
+    </div>
+    
+    <nav class="main-nav">
+      <a href="index.html" class="nav-link" data-i18n="common.nav_home">الرئيسية</a>
+      <a href="generate.html" class="nav-link" data-i18n="common.nav_generator">المولد</a>
+      <a href="privacy.html" class="nav-link" data-i18n="common.nav_privacy">الخصوصية</a>
+      <a href="faq.html" class="nav-link active" data-i18n="common.nav_faq">الأسئلة الشائعة</a>
+      <a href="about.html" class="nav-link" data-i18n="common.nav_about">عن المطور</a>
+    </nav>
+    
+    <div class="header-controls">
+      <button id="themeToggle" class="icon-btn" data-i18n-title="common.theme_toggle">
+        <i class="fas fa-moon"></i>
+      </button>
+      <button id="langToggle" class="icon-btn" data-i18n-title="common.language_toggle">
+        <i class="fas fa-language"></i>
+        <span class="lang-text">EN</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    
+    <!-- Page Header -->
+    <section class="page-header" data-aos="fade-up">
+      <div class="header-icon">
+        <i class="fas fa-question-circle"></i>
+      </div>
+      <h1 class="page-title" data-i18n="faq.title">الأسئلة الشائعة</h1>
+      <p class="page-subtitle" data-i18n="faq.subtitle">إجابات عن الأسئلة المتكررة حول حصّنها</p>
+      
+      <!-- Search Box -->
+      <div class="search-box" data-aos="fade-up" data-aos-delay="100">
+        <i class="fas fa-search"></i>
+        <input type="text" id="faqSearch" placeholder="ابحث في الأسئلة..." data-i18n-placeholder="faq.search_placeholder">
+        <button class="search-btn" data-i18n="faq.search_button">بحث</button>
+      </div>
+    </section>
+
+    <!-- Quick Stats -->
+    <section class="stats-section" data-aos="fade-up" data-aos-delay="150">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <div class="stat-number">100%</div>
+          <div class="stat-label" data-i18n="faq.stat_secure">آمن</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-bolt"></i>
+          </div>
+          <div class="stat-number">0ms</div>
+          <div class="stat-label" data-i18n="faq.stat_fast">سريع</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="stat-number">0</div>
+          <div class="stat-label" data-i18n="faq.stat_storage">تخزين</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-globe"></i>
+          </div>
+          <div class="stat-number">2</div>
+          <div class="stat-label" data-i18n="faq.stat_languages">لغات</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Categories -->
+    <nav class="faq-categories" data-aos="fade-up" data-aos-delay="200">
+      <h3 data-i18n="faq.categories_title">التصنيفات</h3>
+      <div class="categories-grid">
+        <button class="category-btn active" data-category="all" data-i18n="faq.category_all">الكل</button>
+        <button class="category-btn" data-category="security" data-i18n="faq.category_security">الأمان</button>
+        <button class="category-btn" data-category="usage" data-i18n="faq.category_usage">الاستخدام</button>
+        <button class="category-btn" data-category="privacy" data-i18n="faq.category_privacy">الخصوصية</button>
+        <button class="category-btn" data-category="technical" data-i18n="faq.category_technical">التقنية</button>
+      </div>
+    </nav>
+
+    <!-- FAQ Content -->
+    <section class="faq-content" data-aos="fade-up" data-aos-delay="250">
+      
+      <!-- Security Questions -->
+      <div class="faq-category" data-category="security">
+        <h2 class="category-title">
+          <i class="fas fa-shield-alt"></i>
+          <span data-i18n="faq.category_security">أسئلة الأمان</span>
+        </h2>
+        
+        <div class="faq-accordion">
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq1_question">هل كلمات المرور التي أتولدها آمنة حقاً؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.faq1_answer">نعم! كلمات المرور التي يتم توليدها باستخدام حصّنها آمنة للغاية. نستخدم خوارزميات عشوائية قوية وتوليد كلمات مرور متنوعة تشمل الأحرف الكبيرة والصغيرة والأرقام والرموز. كل كلمة مرور فريدة ويصعب تخمينها.</p>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq2_question">كيف يمكنني التأكد من قوة كلمة المرور؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.faq2_answer">حصّنها تحتوي على مؤشر قوة كلمة المرور الذي يحلل قوة الكلمة بناءً على:</p>
+              <ul>
+                <li data-i18n="faq.faq2_point1">الطول (12 حرفاً أو أكثر)</li>
+                <li data-i18n="faq.faq2_point2">تنوع الأحرف (كبيرة، صغيرة، أرقام، رموز)</li>
+                <li data-i18n="faq.faq2_point3">عدم وجود أنماط متكررة</li>
+                <li data-i18n="faq.faq2_point4">التعقيد العام</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq3_question">ما هي مدة كسر كلمة مرور قوية؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.faq3_answer">كلمة مرور قوية من 12 حرفاً تحتوي على أحرف متنوعة قد تستغرق:</p>
+              <div class="comparison-table">
+                <div class="comparison-row">
+                  <span data-i18n="faq.comparison_hacker">قراصنة عاديون</span>
+                  <span data-i18n="faq.comparison_time1">+1000 سنة</span>
+                </div>
+                <div class="comparison-row">
+                  <span data-i18n="faq.comparison_super">حواسيب فائقة</span>
+                  <span data-i18n="faq.comparison_time2">+62 تريليون سنة</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Usage Questions -->
+      <div class="faq-category" data-category="usage">
+        <h2 class="category-title">
+          <i class="fas fa-laptop"></i>
+          <span data-i18n="faq.category_usage">أسئلة الاستخدام</span>
+        </h2>
+        
+        <div class="faq-accordion">
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq4_question">كيف أستخدم حصّنها بشكل صحيح؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.faq4_answer">للاستخدام الأمثل:</p>
+              <ol>
+                <li data-i18n="faq.faq4_step1">اختر نوع كلمة المرور المناسب (قوية، سهلة التذكر، PIN، مخصصة)</li>
+                <li data-i18n="faq.faq4_step2">اضبط الإعدادات حسب احتياجاتك</li>
+                <li data-i18n="faq.faq4_step3">انقر على \"توليد كلمة مرور\"</li>
+                <li data-i18n="faq.faq4_step4">انسخ كلمة المرور واحفظها في مدير كلمات مرور</li>
+                <li data-i18n="faq.faq4_step5">لا تعيد استخدام كلمة المرور لأكثر من حساب</li>
+              </ol>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq5_question">ما الفرق بين أنواع كلمات المرور المختلفة؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <div class="password-types">
+                <div class="type-comparison">
+                  <div class="type-item">
+                    <i class="fas fa-shield-virus"></i>
+                    <h4 data-i18n="generator.type_strong">قوية</h4>
+                    <p data-i18n="faq.type_strong_desc_faq">لحسابات مهمة مثل البنوك والبريد</p>
+                  </div>
+                  <div class="type-item">
+                    <i class="fas fa-brain"></i>
+                    <h4 data-i18n="generator.type_memorable">سهلة التذكر</h4>
+                    <p data-i18n="faq.type_memorable_desc_faq">لحسابات أقل أهمية تحتاج تذكر سريع</p>
+                  </div>
+                  <div class="type-item">
+                    <i class="fas fa-hashtag"></i>
+                    <h4 data-i18n="generator.type_pin">PIN</h4>
+                    <p data-i18n="faq.type_pin_desc_faq">لأجهزة الهاتف أو الرموز المؤقتة</p>
+                  </div>
+                  <div class="type-item">
+                    <i class="fas fa-wand-magic-sparkles"></i>
+                    <h4 data-i18n="generator.type_custom">مخصصة</h4>
+                    <p data-i18n="faq.type_custom_desc_faq">لاحتياجات خاصة بمعايير محددة</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq6_question">هل يمكنني استخدام حصّنها دون اتصال بالإنترنت؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n-html="faq.faq6_answer"><strong>نعم!</strong> حصّنها تعمل كلياً دون اتصال بالإنترنت. بمجرد تحميل الصفحة، يمكنك استخدام جميع الميزات بدون الحاجة للاتصال.</p>
+              <div class="feature-badge">
+                <i class="fas fa-wifi-slash"></i>
+                <span data-i18n="faq.offline_feature">ميزة العمل دون اتصال</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Privacy Questions -->
+      <div class="faq-category" data-category="privacy">
+        <h2 class="category-title">
+          <i class="fas fa-user-secret"></i>
+          <span data-i18n="faq.category_privacy">أسئلة الخصوصية</span>
+        </h2>
+        
+        <div class="faq-accordion">
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq7_question">هل يتم تخزين كلمات المرور التي أتولدها؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n-html="faq.faq7_answer"><strong>لا</strong>، نحن <strong>لا نخزن</strong> أي كلمات مرور على خوادمنا. الكلمات التي تتولد:</p>
+              <ul>
+                <li data-i18n="faq.faq7_point1">⚠️ لا ترسل إلى الإنترنت</li>
+                <li data-i18n="faq.faq7_point2">⚠️ لا تحفظ في قواعد بياناتنا</li>
+                <li data-i18n="faq.faq7_point3">✅ تبقى على جهازك فقط</li>
+                <li data-i18n="faq.faq7_point4">✅ يمكن حفظها محلياً في المتصفح (اختياري)</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq8_question">ما البيانات التي تجمعونها عني؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n-html="faq.faq8_answer">نحن <strong>لا نجمع</strong> أي بيانات شخصية. البيانات الوحيدة التي قد نحتفظ بها:</p>
+              <div class="data-list">
+                <div class="data-item">
+                  <i class="fas fa-sliders"></i>
+                  <span data-i18n="faq.data_settings">إعدادات التفضيلات (محلياً)</span>
+                </div>
+                <div class="data-item">
+                  <i class="fas fa-history"></i>
+                  <span data-i18n="faq.data_history">سجل كلمات المرور (محلياً)</span>
+                </div>
+                <div class="data-item">
+                  <i class="fas fa-language"></i>
+                  <span data-i18n="faq.data_language">تفضيلات اللغة (محلياً)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq9_question">هل الموقع آمن ويستخدم تشفير HTTPS؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n-html="faq.faq9_answer"><strong>نعم!</strong> حصّنها تستخدم تشفير HTTPS لتأمين اتصالك مع الموقع. هذا يعني:</p>
+              <div class="security-features">
+                <div class="security-item">
+                  <i class="fas fa-lock"></i>
+                  <span data-i18n="faq.security_encryption">اتصال مشفر</span>
+                </div>
+                <div class="security-item">
+                  <i class="fas fa-shield-alt"></i>
+                  <span data-i18n="faq.security_protection">حماية من التنصت</span>
+                </div>
+                <div class="security-item">
+                  <i class="fas fa-certificate"></i>
+                  <span data-i18n="faq.security_certificate">شهادة SSL صالحة</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <!-- Technical Questions -->
+      <div class="faq-category" data-category="technical">
+        <h2 class="category-title">
+          <i class="fas fa-cogs"></i>
+          <span data-i18n="faq.category_technical">أسئلة تقنية</span>
+        </h2>
+        
+        <div class="faq-accordion">
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq10_question">ما التقنيات المستخدمة في بناء حصّنها؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.faq10_answer">حصّنها مبنية باستخدام أحدث التقنيات الحديثة:</p>
+              <div class="tech-stack">
+                <div class="tech-item">
+                  <i class="fab fa-html5"></i>
+                  <span>HTML5</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-css3-alt"></i>
+                  <span>CSS3</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fab fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <div class="tech-item">
+                  <i class="fas fa-palette"></i>
+                  <span data-i18n="faq.tech_custom">تصميم مخصص</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq11_question">هل الكود مفتوح المصدر؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n-html="faq.faq11_answer"><strong>نعم!</strong> حصّنها مشروع مفتوح المصدر. يمكنك:</p>
+              <div class="opensource-features">
+                <div class="feature-item">
+                  <i class="fas fa-eye"></i>
+                  <span data-i18n="faq.feature_view">مراجعة الكود المصدري</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-code-branch"></i>
+                  <span data-i18n="faq.feature_contribute">المساهمة في التطوير</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-bug"></i>
+                  <span data-i18n="faq.feature_report">الإبلاغ عن الأخطاء</span>
+                </div>
+                <div class="feature-item">
+                  <i class="fas fa-download"></i>
+                  <span data-i18n="faq.feature_download">تحميل نسخة محلية</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="faq-item" data-aos="fade-up">
+            <button class="faq-question">
+              <span class="question-text" data-i18n="faq.faq12_question">هل هناك إصدار تطبيق جوال؟</span>
+              <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="faq-answer">
+              <p data-i18n="faq.faq12_answer">حالياً، حصّنها متاحة كموقع ويب متجاوب يعمل على جميع الأجهزة. لكن:</p>
+              <div class="mobile-plans">
+                <div class="plan-item current">
+                  <i class="fas fa-mobile-alt"></i>
+                  <h4 data-i18n="faq.plan_current">الحالي</h4>
+                  <p data-i18n="faq.plan_current_desc">موقع ويب متجاوب</p>
+                </div>
+                <div class="plan-item future">
+                  <i class="fas fa-rocket"></i>
+                  <h4 data-i18n="faq.plan_future">المستقبل</h4>
+                  <p data-i18n="faq.plan_future_desc">تطبيقات جوال قريباً</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="contact-cta" data-aos="fade-up" data-aos-delay="300">
+      <div class="cta-content">
+        <h3 data-i18n="faq.cta_title">لا زلت لديك أسئلة؟</h3>
+        <p data-i18n="faq.cta_subtitle">فريق الدعم جاهز لمساعدتك في أي وقت</p>
+        <div class="cta-actions">
+          <a href="mailto:support@hasenha.com" class="primary-btn" data-i18n="faq.cta_contact">
+            <i class="fas fa-envelope"></i>
+            اتصل بنا
+          </a>
+          <a href="privacy.html" class="secondary-btn" data-i18n="faq.cta_privacy">
+            <i class="fas fa-shield-alt"></i>
+            سياسة الخصوصية
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer" data-aos="fade-up" data-aos-delay="350">
+    <div class="footer-links">
+      <a href="index.html" class="footer-link" data-i18n="common.nav_home">الرئيسية</a>
+      <a href="generate.html" class="footer-link" data-i18n="common.nav_generator">المولد</a>
+      <a href="privacy.html" class="footer-link" data-i18n="common.nav_privacy">الخصوصية</a>
+      <a href="faq.html" class="footer-link" data-i18n="common.nav_faq">الأسئلة الشائعة</a>
+      <a href="about.html" class="footer-link" data-i18n="common.nav_about">عن المطور</a>
+    </div>
+      <p>
+          <i class="fas fa-code"></i>
+          <span data-i18n="common.footer_text">صُنع بِحِرْص</span>
+          <span>
+              <span data-i18n="common.footer_by">بواسطة</span>
+              <a href="https://bandar.codes" class="footer-link" data-i18n="common.footer_bandar">بندر الجميلي</a>
+          </span>
+      </p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- i18n JS -->
+  <script src="assets/js/i18n.js"></script>
+  <!-- Main JS -->
+  <script src="static/js/main.js"></script>
+  <!-- FAQ JS -->
+  <script src="static/js/faq.js"></script>
+</body>
+</html>

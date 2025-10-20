@@ -1,0 +1,22 @@
+/* TEAM */
+    Developer: بندر الجميلي (Bandar Aljameely)
+    Site: https://bandar.codes
+    Twitter: @bandar_cyber
+    GitHub: @B2nd9R
+
+/* THANKS */
+    Font Awesome - Icons
+    Google Fonts - Typography
+    AOS Library - Animations
+    Open Source Community
+
+/* SITE */
+    Last update: 2025/10/20
+    Standards: HTML5, CSS3, ES6+
+    Components: Password Generator, Security Tools
+    Doctype: HTML5
+    IDE: VS Code
+
+/* MESSAGE */
+    "بنينا المستقبل الرقمي بكلية آمنة"
+    "الكود سلاح نحمي به الخصوصية"

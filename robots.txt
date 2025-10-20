@@ -1,0 +1,23 @@
+# 🌐 Hasenha - Robots.txt
+# 🔐 Secure Password Generator - Professional SEO Setup
+
+User-agent: *
+Allow: /
+
+# 🌍 Sitemap Location
+Sitemap: https://hasenha.com/sitemap.xml
+
+# 🚫 Disallowed Paths (for security)
+Disallow: /assets/js/
+Disallow: /assets/lang/
+Disallow: /static/js/
+
+# ✅ Allowed for SEO
+Allow: /index.html
+Allow: /generate.html  
+Allow: /privacy.html
+Allow: /faq.html
+Allow: /about.html
+
+# 🕵️ Crawling directives
+Crawl-delay: 1
