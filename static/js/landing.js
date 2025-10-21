@@ -79,6 +79,24 @@ function addInteractiveEffects() {
       }
     });
   });
+
+  const opensourceFeatures = document.querySelectorAll('.opensource-feature');
+    opensourceFeatures.forEach(feature => {
+      feature.addEventListener('mouseenter', () => {
+        const icon = feature.querySelector('i');
+        if (icon) {
+          icon.style.transform = 'scale(1.3)';
+          icon.style.transition = 'transform 0.3s ease';
+        }
+      });
+      
+      feature.addEventListener('mouseleave', () => {
+        const icon = feature.querySelector('i');
+        if (icon) {
+          icon.style.transform = 'scale(1)';
+        }
+      });
+    });
 }
 
 // Call interactive effects after page load

@@ -32,9 +32,6 @@
     <meta property="og:url" content="https://hasenha.onrender.com">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="حصّنها">
-
-    <!-- تأكد من هذه أيضاً -->
-    <meta name="twitter:image" content="https://hasenha.onrender.com/assets/images/logo.png">
     
     <!-- 🐦 Twitter Card -->
     <meta property="twitter:card" content="summary_large_image">
@@ -134,32 +131,33 @@
 
   <!-- Header -->
   <header class="main-header" data-aos="fade-down">
-    <div class="logo-container">
-      <img src="/assets/images/logo.png" alt="حصّنها | Hasenha Logo" class="logo-image">
-      <h1 class="logo-text">
-        <span class="arabic-name">حصّنها</span>
-        <span class="divider">|</span>
-        <span class="english-name">Hasenha</span>
-      </h1>
-    </div>
-    
-    <nav class="main-nav">
-      <a href="index.html" class="nav-link active" data-i18n="common.nav_home">الرئيسية</a>
-      <a href="generate.html" class="nav-link" data-i18n="common.nav_generator">المولد</a>
-      <a href="privacy.html" class="nav-link" data-i18n="common.nav_privacy">الخصوصية</a>
-      <a href="faq.html" class="nav-link" data-i18n="common.nav_faq">الأسئلة الشائعة</a>
-      <a href="about.html" class="nav-link" data-i18n="common.nav_about">عن المطور</a>
-    </nav>
-    
-    <div class="header-controls">
-      <button id="themeToggle" class="icon-btn" data-i18n-title="common.theme_toggle">
-        <i class="fas fa-moon"></i>
-      </button>
-      <button id="langToggle" class="icon-btn" data-i18n-title="common.language_toggle">
-        <i class="fas fa-language"></i>
-        <span class="lang-text">EN</span>
-      </button>
-    </div>
+      <div class="logo-container">
+          <img src="assets/images/logo.png" alt="حصّنها" class="logo-image">
+          <h1 class="logo-text">
+              <span class="arabic-name">حصّنها</span>
+              <span class="divider">|</span>
+              <span class="english-name">Hasenha</span>
+          </h1>
+      </div>
+      
+      <nav class="main-nav">
+          <a href="index.html" class="nav-link active" data-i18n="common.nav_home">الرئيسية</a>
+          <a href="generate.html" class="nav-link" data-i18n="common.nav_generator">المولد</a>
+          <a href="check.html" class="nav-link" data-i18n="common.nav_check">فحص القوة</a>
+          <a href="privacy.html" class="nav-link" data-i18n="common.nav_privacy">الخصوصية</a>
+          <a href="faq.html" class="nav-link" data-i18n="common.nav_faq">الأسئلة الشائعة</a>
+          <a href="about.html" class="nav-link" data-i18n="common.nav_about">عن المطور</a>
+      </nav>
+      
+      <div class="header-controls">
+          <button id="themeToggle" class="icon-btn" data-i18n-title="common.theme_toggle">
+              <i class="fas fa-moon"></i>
+          </button>
+          <button id="langToggle" class="icon-btn" data-i18n-title="common.language_toggle">
+              <i class="fas fa-language"></i>
+              <span class="lang-text">EN</span>
+          </button>
+      </div>
   </header>
 
   <!-- Main Container -->
@@ -267,17 +265,56 @@
         </a>
       </div>
     </section>
+
+    <!-- Open Source Section -->
+    <section class="opensource-section" data-aos="fade-up">
+      <div class="opensource-content">
+        <div class="opensource-icon">
+          <i class="fab fa-github"></i>
+        </div>
+        <h3 class="opensource-title" data-i18n="opensource.title">مشروع مفتوح المصدر</h3>
+        <p class="opensource-desc" data-i18n="opensource.description">
+          حصّنها مشروع مفتوح المصدر، يمكن للجميع مراجعة الكود، المساهمة في التطوير، والإبلاغ عن الأخطاء
+        </p>
+        
+        <div class="opensource-features">
+          <div class="opensource-feature" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-code-branch"></i>
+            <h4 data-i18n="opensource.feature1_title">مراجعة الكود</h4>
+            <p data-i18n="opensource.feature1_desc">يمكن للجميع مراجعة الكود المصدري والتأكد من الأمان</p>
+          </div>
+          
+          <div class="opensource-feature" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-hands-helping"></i>
+            <h4 data-i18n="opensource.feature2_title">المساهمة</h4>
+            <p data-i18n="opensource.feature2_desc">ساهم في تطوير المشروع وإضافة ميزات جديدة</p>
+          </div>
+          
+          <div class="opensource-feature" data-aos="fade-up" data-aos-delay="300">
+            <i class="fas fa-bug"></i>
+            <h4 data-i18n="opensource.feature3_title">الإبلاغ عن الأخطاء</h4>
+            <p data-i18n="opensource.feature3_desc">ساعدنا في تحسين الأداة بالإبلاغ عن المشاكل</p>
+          </div>
+        </div>
+        
+        <a href="https://github.com/B2nd9R/hasenha.git" target="_blank" class="github-btn" data-i18n="opensource.github_button">
+          <i class="fab fa-github"></i>
+          استعرض الكود على GitHub
+        </a>
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
   <footer class="main-footer" data-aos="fade-up">
-    <div class="footer-links">
-      <a href="index.html" class="footer-link" data-i18n="common.nav_home">الرئيسية</a>
-      <a href="generate.html" class="footer-link" data-i18n="common.nav_generator">المولد</a>
-      <a href="privacy.html" class="footer-link" data-i18n="common.nav_privacy">الخصوصية</a>
-      <a href="faq.html" class="footer-link" data-i18n="common.nav_faq">الأسئلة الشائعة</a>
-      <a href="about.html" class="footer-link" data-i18n="common.nav_about">عن المطور</a>
-    </div>
+      <div class="footer-links">
+          <a href="index.html" class="footer-link" data-i18n="common.nav_home">الرئيسية</a>
+          <a href="generate.html" class="footer-link" data-i18n="common.nav_generator">المولد</a>
+          <a href="check.html" class="footer-link" data-i18n="common.nav_check">فحص القوة</a>
+          <a href="privacy.html" class="footer-link" data-i18n="common.nav_privacy">الخصوصية</a>
+          <a href="faq.html" class="footer-link" data-i18n="common.nav_faq">الأسئلة الشائعة</a>
+          <a href="about.html" class="footer-link" data-i18n="common.nav_about">عن المطور</a>
+      </div>
       <p>
           <i class="fas fa-code"></i>
           <span data-i18n="common.footer_text">صُنع بِحِرْص</span>

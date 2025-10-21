@@ -177,6 +177,116 @@
   font-size: 1.2rem;
 }
 
+/* ===== Open Source Section ===== */
+.opensource-section {
+  padding: 4rem 0;
+  background: var(--card-bg);
+  margin: 2rem 0;
+  border-radius: 20px;
+  border: 2px solid var(--border-glow);
+}
+
+.opensource-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.opensource-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(135deg, var(--cyber-blue), var(--cyber-red));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.opensource-title {
+  font-size: 2.2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  font-family: var(--font-family-primary);
+}
+
+.opensource-desc {
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+}
+
+.opensource-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.opensource-feature {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.opensource-feature i {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--cyber-blue);
+}
+
+.opensource-feature h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-light);
+}
+
+.opensource-feature p {
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+.github-btn {
+  background: linear-gradient(135deg, #333, #000);
+  border: none;
+  color: white;
+  padding: 1.25rem 3rem;
+  border-radius: 8px;
+  font-family: var(--font-family-primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  text-decoration: none;
+}
+
+.github-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+  background: linear-gradient(135deg, #444, #111);
+}
+
+.github-btn i {
+  font-size: 1.4rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .opensource-title {
+    font-size: 1.8rem;
+  }
+  
+  .opensource-desc {
+    font-size: 1.1rem;
+  }
+  
+  .opensource-features {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ===== Responsive ===== */
 @media (max-width: 768px) {
   .hero-title {
