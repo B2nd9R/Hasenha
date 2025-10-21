@@ -1,16 +1,17 @@
-# 🛡️ حصّنها | Hasenha - مولد كلمات المرور الآمن
+# 🛡️ حصّنها | Hasenha - مولد كلمات المرور الآمن + فاحص القوة
 
 <div align="center">
 
 ![Hasenha Logo](assets/images/logo.png)
 
-![Version](https://img.shields.io/badge/Version-1.0.0-00d9ff?style=for-the-badge&logo=star&logoColor=white)
+![Version](https://img.shields.io/badge/Version-1.1.0-00d9ff?style=for-the-badge&logo=star&logoColor=white)
 ![License](https://img.shields.io/badge/LICENSE-MIT-ff0055?style=for-the-badge&logo=open-source-initiative&logoColor=white)
 ![Arabic](https://img.shields.io/badge/Arabic-100%25-00d9ff?style=for-the-badge&logo=language&logoColor=white)
+![Open Source](https://img.shields.io/badge/Open_Source-Yes-ff0055?style=for-the-badge&logo=github&logoColor=white)
 
-**أداة متقدمة لتوليد كلمات مرور قوية وآمنة بتصميم سيبراني عصري**
+**منصة متكاملة لتوليد وتحليل كلمات المرور بتصميم سيبراني عصري**
 
-[🚀 تجربة مباشرة](#-تجربة-مباشرة) • [📖 التوثيق](#-كيفية-الاستخدام) • [🔧 التثبيت](#-التثبيت) • [🤝 المساهمة](#-المساهمة-في-المشروع)
+[🚀 تجربة مباشرة](#-تجربة-مباشرة) • [🆕 الميزات الجديدة](#-الميزات-الجديدة) • [📖 التوثيق](#-كيفية-الاستخدام) • [🤝 المساهمة](#-المساهمة-في-المشروع)
 
 </div>
 
@@ -18,11 +19,26 @@
 
 <div align="center">
 
-| 🔐 الأمان المطلق | 🌍 دعم عربي كامل | 🎨 تصميم سيبراني | ⚡ أداء فائق |
-|:----------------:|:----------------:|:----------------:|:------------:|
-| لا تخزين للبيانات | واجهة عربية احترافية | ألوان سيبرانية جذابة | يعمل دون اتصال |
+| 🔐 الأمان المطلق | 🌍 دعم عربي كامل | 🎨 تصميم سيبراني | ⚡ أداء فائق | 🔍 فحص القوة |
+|:----------------:|:----------------:|:----------------:|:------------:|:------------:|
+| لا تخزين للبيانات | واجهة عربية احترافية | ألوان سيبرانية جذابة | يعمل دون اتصال | تحليل متقدم |
 
 </div>
+
+## 🆕 الميزات الجديدة في v1.1.0
+
+### 🔍 **فحص قوة كلمات المرور** - ميزة جديدة كاملة!
+- **صفحة متخصصة** لتحليل قوة كلمات المرور الحالية
+- **خوارزمية متقدمة** للتقييم بناءً على معايير متعددة
+- **تقدير وقت كسر** كلمة المرور (من ثواني إلى قرون!)
+- **نصائح مخصصة** للتحسين وأمان أفضل
+- **تحذيرات أمنية** فورية وشاملة
+
+### 📖 **قسم مفتوح المصدر** في الصفحة الرئيسية
+- **شفافية كاملة** - يمكن للجميع مراجعة الكود
+- **تشجيع المساهمات** من المطورين
+- **الإبلاغ عن الأخطاء** بسهولة
+- **رابط مباشر** لمستودع GitHub
 
 ## 🚀 تجربة مباشرة
 
@@ -34,6 +50,15 @@
 
 ![Demo](https://img.shields.io/badge/🟢-Instant_Access-00d9ff?style=for-the-badge)
 ![Security](https://img.shields.io/badge/🔒-Privacy_Focused-ff0055?style=for-the-badge)
+![New Feature](https://img.shields.io/badge/🆕-Password_Checker-00d9ff?style=for-the-badge)
+
+**صفحات الموقع:**
+[🏠 الرئيسية](https://hasenha.onrender.com) • 
+[🔧 المولد](https://hasenha.onrender.com/generate.html) • 
+[🔍 فحص القوة](https://hasenha.onrender.com/check.html) • 
+[📄 الخصوصية](https://hasenha.onrender.com/privacy.html) • 
+[❓ الأسئلة الشائعة](https://hasenha.onrender.com/faq.html) • 
+[👨‍💻 عن المطور](https://hasenha.onrender.com/about.html)
 
 </div>
 
@@ -77,6 +102,12 @@ php -S localhost:8000
 |:-------------:|:-----------------:|:-----------------:|:--------------:|
 | 🎯 قوية/سهلة التذكر | ⚙️ طول وأنواع الأحرف | 🚀 توليد فوري | 📋 نسخ آمن |
 
+### 🔍 خطوات فحص قوة كلمات المرور
+
+| 1. أدخل كلمة المرور | 2. انقر فحص القوة | 3. احصل على التحليل | 4. اتبع النصائح |
+|:-------------------:|:-----------------:|:-------------------:|:--------------:|
+| 🔒 أدخل كلمة المرور | 🔍 تحليل فوري | 📊 تقرير مفصل | 💡 تحسينات مقترحة |
+
 </div>
 
 ### أنواع كلمات المرور المدعومة
@@ -86,11 +117,19 @@ php -S localhost:8000
 - **#️⃣ رموز PIN**: لأجهزة الهاتف والتطبيقات
 - **🎨 مخصصة**: تحكم كامل في أنواع الأحرف
 
+### تحليل قوة كلمات المرور يشمل
+
+- **📈 مؤشر القوة**: (ضعيفة ← متوسطة ← قوية ← قوية جداً)
+- **⏰ وقت التخمين**: تقدير الوقت اللازم لكسر الكلمة
+- **📋 التقييم التفصيلي**: تحليل كل معيار على حدة
+- **💡 نصائح التحسين**: اقتراحات مخصصة للتحسين
+- **⚠️ تحذيرات أمنية**: تنبيهات فورية للمشاكل
+
 ## 🏗️ الهيكل التقني
 
 ```
 hasenha/
-├── 📄 الصفحات الرئيسية (5 صفحات)
+├── 📄 الصفحات الرئيسية (6 صفحات)
 ├── 📁 assets/
 │   ├── 📁 images/          # الشعارات والصور
 │   ├── 📁 js/              # نظام الترجمة
@@ -100,6 +139,14 @@ hasenha/
 │   └── 📁 js/              # الوظائف التفاعلية
 └── 📄 ملفات التوثيق
 ```
+
+### الصفحات المتاحة
+- **🏠 الرئيسية** - واجهة ترحيبية + قسم مفتوح المصدر
+- **🔧 المولد** - توليد كلمات المرور بأنواعها
+- **🔍 فحص القوة** - تحليل قوة كلمات المرور (جديد)
+- **📄 الخصوصية** - سياسة الخصوصية والأمان
+- **❓ الأسئلة الشائعة** - إجابات عن الاستفسارات
+- **👨‍💻 عن المطور** - معلومات عن المطور
 
 ### التقنيات المستخدمة
 
@@ -132,6 +179,7 @@ hasenha/
 ![No Storage](https://img.shields.io/badge/❌-No_Data_Storage-00d9ff?style=for-the-badge)
 ![No Tracking](https://img.shields.io/badge/👁️-No_User_Tracking-ff0055?style=for-the-badge)
 ![Local Processing](https://img.shields.io/badge/💻-100%25_Local_Processing-00d9ff?style=for-the-badge)
+![Open Source](https://img.shields.io/badge/📖-Fully_Open_Source-ff0055?style=for-the-badge)
 
 </div>
 
@@ -140,6 +188,7 @@ hasenha/
 - ✅ **لا توجد خوادم تخزين**
 - ✅ **شفرة مفتوحة للمراجعة**
 - ✅ **تشفير محلي بالكامل**
+- ✅ **فحص القوة يتم محلياً**
 
 ## 🌍 نظام الترجمة
 
@@ -169,6 +218,13 @@ git push origin feature/magic-feature
 
 # 5. افتح طلب دمج
 ```
+
+### مجالات المساهمة المقترحة
+- 🐛 **إصلاح الأخطاء** وتحسين الأداء
+- 🌍 **إضافة لغات** جديدة للترجمة
+- 🎨 **تحسين التصميم** وواجهة المستخدم
+- 🔧 **إضافة ميزات** جديدة ومفيدة
+- 📚 **تحسين التوثيق** والإرشادات
 
 ### إرشادات المساهمة
 - ✅ اتبع نمط الترميز الموجود
@@ -211,6 +267,7 @@ git push origin feature/magic-feature
 [![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?style=flat&logo=font-awesome&logoColor=white)](https://fontawesome.com)
 [![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=flat&logo=google-fonts&logoColor=white)](https://fonts.google.com)
 [![AOS Library](https://img.shields.io/badge/AOS_Library-00d9ff?style=flat)](https://michalsnik.github.io/aos/)
+[![Open Source](https://img.shields.io/badge/Open_Source_Community-ff0055?style=flat&logo=open-source-initiative&logoColor=white)](https://opensource.org)
 
 </div>
 
@@ -220,7 +277,7 @@ git push origin feature/magic-feature
 
 [![GitHub Issues](https://img.shields.io/badge/🐙-Report_a_Bug-00d9ff?style=for-the-badge)](https://github.com/B2nd9R/hasenha/issues)
 [![GitHub Discussions](https://img.shields.io/badge/💬-Ask_a_Question-ff0055?style=for-the-badge)](https://github.com/B2nd9R/hasenha/discussions)
-
+[![New Feature](https://img.shields.io/badge/💡-Suggest_Feature-00d9ff?style=for-the-badge)](https://github.com/B2nd9R/hasenha/issues/new)
 
 </div>
 
@@ -235,8 +292,20 @@ git push origin feature/magic-feature
 [🌟 امنح نجمة إذا أعجبك المشروع!](https://github.com/B2nd9R/hasenha/stargazers)
 
 ![Footer](https://img.shields.io/badge/🔐-Secure_with_Hasenha-00d9ff?style=for-the-badge)
-![Footer](https://img.shields.io/badge/🔐-Hasenha_Digital_Security-00d9ff?style=for-the-badge)
-![Footer](https://img.shields.io/badge/🔐-Protecting_Your_Digital_World-00d9ff?style=for-the-badge)
-![Footer](https://img.shields.io/badge/🔐-Stronger_Security_with_Hasenha-00d9ff?style=for-the-badge)
+![Footer](https://img.shields.io/badge/🔍-Check_Your_Passwords-ff0055?style=for-the-badge)
+![Footer](https://img.shields.io/badge/🔐-Open_Source_Security-00d9ff?style=for-the-badge)
+![Footer](https://img.shields.io/badge/🚀-Version_1.1.0_Live-ff0055?style=for-the-badge)
+
+**معاً نحو إنترنت أكثر أماناً للجميع** 🌍🔐
+
+</div>
+
+---
+
+<div align="center">
+
+**📢 شارك المشروع مع أصدقائك لنساعد الجميع في حماية حساباتهم!**
+
+[🔗 https://github.com/B2nd9R/hasenha](https://github.com/B2nd9R/hasenha)
 
 </div>
