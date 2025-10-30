@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # 🌍 Sitemap Location
-Sitemap: https://hasenha.com/sitemap.xml
+Sitemap: Sitemap: https://hasenha.onrender.com/sitemap.xml
 
 # 🚫 Disallowed Paths (for security)
 Disallow: /assets/js/
