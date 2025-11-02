@@ -1,0 +1,11 @@
+{
+	"title": "Proyecto de Código Abierto",
+	"description": "Hasenha es un proyecto de código abierto, todos pueden revisar el código, contribuir al desarrollo y reportar errores",
+	"feature1_title": "Revisión de Código",
+	"feature1_desc": "Todos pueden revisar el código fuente y asegurar la seguridad",
+	"feature2_title": "Contribución",
+	"feature2_desc": "Contribuye al desarrollo del proyecto y añade nuevas características",
+	"feature3_title": "Reportar Errores",
+	"feature3_desc": "Ayúdanos a mejorar la herramienta reportando problemas",
+	"github_button": "Ver Código en GitHub"
+}

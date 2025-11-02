@@ -430,7 +430,7 @@
 
 .crack-content p {
     color: var(--cyber-blue);
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-family-primary);
     font-weight: 700;
     font-size: 1.2rem;
     margin: 0;
@@ -457,6 +457,49 @@
     font-size: 1.1rem;
     border-bottom: 1px solid var(--border-glow);
     padding-bottom: 0.5rem;
+}
+
+/* Breach Result */
+.breach-result {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    transition: all 0.3s ease;
+}
+
+.breach-result i {
+    font-size: 1.5rem;
+}
+
+.breach-result.neutral {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    border: 1px solid var(--border-glow);
+}
+
+.breach-result.positive {
+    background: rgba(0, 255, 136, 0.1);
+    color: var(--success);
+    border: 1px solid var(--success);
+}
+
+.breach-result.negative {
+    background: rgba(255, 0, 85, 0.1);
+    color: var(--cyber-red);
+    border: 1px solid var(--cyber-red);
+    animation: pulseRed 1s infinite alternate;
+}
+
+@keyframes pulseRed {
+    from { box-shadow: 0 0 0 rgba(255, 0, 85, 0.4); }
+    to { box-shadow: 0 0 15px rgba(255, 0, 85, 0.8); }
 }
 
 /* Score Breakdown */

@@ -1,9 +1,22 @@
-// ===== Internationalization (i18n) System =====
 class I18n {
     constructor() {
         this.currentLang = 'ar';
         this.translations = {};
         this.initialized = false;
+        // List of translation files to load (page-specific)
+        this.translationFiles = [
+            'common',
+            'meta',
+            'landing',
+            'opensource',
+            'generator',
+            'check',
+            'blog',
+            'privacy',
+            'faq',
+            'about',
+            'article'
+        ];
     }
 
     // Initialize the translation system
@@ -31,38 +44,45 @@ class I18n {
         }));
     }
 
-    // Load translations from JSON file
+    // Load translations from JSON files
     async loadTranslations(lang) {
-        try {
-            const response = await fetch(`assets/lang/${lang}.json`);
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            this.translations = await response.json();
-        } catch (error) {
-            console.error('Failed to load translations:', error);
-            // Fallback to empty translations
-            this.translations = {};
-            
-            // Try to load from backup path
+        this.translations = {}; // Clear previous translations
+        const promises = this.translationFiles.map(async (file) => {
             try {
-                const backupResponse = await fetch(`/assets/lang/${lang}.json`);
-                if (backupResponse.ok) {
-                    this.translations = await backupResponse.json();
+                const response = await fetch(`assets/lang/${lang}/${file}.json`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status} for ${file}.json`);
                 }
-            } catch (backupError) {
-                console.error('Backup translation load failed:', backupError);
+                const data = await response.json();
+                // Merge translations under the file name as the top-level key
+                this.translations[file] = data;
+            } catch (error) {
+                console.error(`Failed to load translations for ${file}.json:`, error);
+                // Fallback to empty object for this file
+                this.translations[file] = {};
             }
-        }
+        });
+
+        await Promise.all(promises);
     }
 
     // Get translation for a key with nested structure support
     t(key, params = {}) {
-        // Support nested keys like "common.nav_home"
+        // The key structure is now: file.key (e.g., "common.nav_home")
         const keys = key.split('.');
-        let translation = this.translations;
+        if (keys.length < 2) {
+            console.warn(`Translation key must be in 'file.key' format: ${key}`);
+            return this.getFallbackTranslation(key);
+        }
         
-        for (const k of keys) {
+        const file = keys[0];
+        const actualKey = keys.slice(1).join('.');
+        
+        let translation = this.translations[file];
+        
+        // Handle nested keys within the file's object
+        const nestedKeys = actualKey.split('.');
+        for (const k of nestedKeys) {
             translation = translation?.[k];
             if (translation === undefined) break;
         }
@@ -75,7 +95,7 @@ class I18n {
 
         // Replace parameters in translation
         Object.keys(params).forEach(param => {
-            translation = translation.replace(`{{${param}}}`, params[param]);
+            translation = translation.replace(`{${param}}`, params[param]);
         });
 
         return translation;
@@ -83,6 +103,7 @@ class I18n {
 
     // Get fallback translation
     getFallbackTranslation(key) {
+        // Fallback structure must match the new key structure: file.key
         const fallbacks = {
             'common.nav_home': 'الرئيسية',
             'common.footer_bandar': 'بندر الجميلي',
@@ -92,7 +113,8 @@ class I18n {
             'generator.title': 'مولد كلمات المرور',
             'privacy.title': 'سياسة الخصوصية',
             'faq.title': 'الأسئلة الشائعة',
-            'about.hero_title': 'بندر الجميلي'
+            'about.hero_title': 'بندر الجميلي',
+            'check.title': 'فحص قوة كلمة المرور' // Added check fallback
         };
         
         return fallbacks[key] || key;

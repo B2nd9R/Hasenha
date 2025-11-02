@@ -22,7 +22,7 @@
 }
 
 .hero-title {
-  font-family: var(--font-family-primary);
+  font-family: 'Cairo', var(--font-family-primary);
   font-size: 3.5rem;
   font-weight: 900;
   margin-bottom: 0.75rem;

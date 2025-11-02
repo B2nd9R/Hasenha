@@ -1,5 +1,5 @@
 /* TEAM */
-    Developer: بندر الجميلي (Bandar Aljameely)
+    Developer: بندر الجميلي (Bandar Al jameely)
     Site: https://bandar.codes
     Twitter: @bandar_cyber
     GitHub: @B2nd9R

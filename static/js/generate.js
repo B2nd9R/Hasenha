@@ -4,6 +4,28 @@
 let currentType = 'strong';
 let passwordHistory = [];
 
+// ===== Statistics Tracking =====
+async function updateStats(action) {
+    try {
+        const response = await fetch('/api/stats/update', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ action: action })
+        });
+
+        const data = await response.json();
+        
+        if (!data.success) {
+            console.warn('Failed to update stats:', data.error);
+        }
+    } catch (error) {
+        console.error('Error updating stats:', error);
+        // تجاهل الخطأ حتى لا يؤثر على تجربة المستخدم
+    }
+}
+
 // ===== Character Sets =====
 const charSets = {
   uppercase: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -211,7 +233,7 @@ function switchType(type) {
 }
 
 // ===== Generate Password =====
-function generatePassword() {
+async function generatePassword() {
   let password = null;
   
   switch (currentType) {
@@ -233,6 +255,9 @@ function generatePassword() {
     document.getElementById('passwordOutput').value = password;
     updateStrengthDisplay(password);
     addToHistory(password);
+    
+    // 🔄 تحديث الإحصاءات في قاعدة البيانات
+    await updateStats('generate');
     
     document.querySelector('.password-display-section').scrollIntoView({ 
       behavior: 'smooth', 

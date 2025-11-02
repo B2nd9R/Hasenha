@@ -1,0 +1,11 @@
+{
+	"title": "Open Source Project",
+	"description": "Hasenha is an open source project, everyone can review the code, contribute to development, and report bugs",
+	"feature1_title": "Code Review",
+	"feature1_desc": "Everyone can review the source code and ensure security",
+	"feature2_title": "Contribution",
+	"feature2_desc": "Contribute to project development and add new features",
+	"feature3_title": "Bug Reporting",
+	"feature3_desc": "Help us improve the tool by reporting problems",
+	"github_button": "View Code on GitHub"
+}

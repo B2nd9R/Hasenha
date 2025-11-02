@@ -1,0 +1,22 @@
+{
+  "name": "hasenha-backend",
+  "version": "1.0.0", 
+  "description": "Secure password backend for Hasenha",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "clean": "Remove-Item -Recurse -Force node_modules, package-lock.json -ErrorAction SilentlyContinue",
+    "reinstall": "npm run clean && npm install",
+    "test:db": "node -e \"require('dotenv').config(); const { createClient } = require('@supabase/supabase-js'); const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_ANON_KEY); console.log('Testing Supabase connection...');\""
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5", 
+    "@supabase/supabase-js": "^2.38.0",
+    "dotenv": "^16.3.1"
+  },
+  "keywords": ["password", "security", "hasenha"],
+  "author": "Bandar Al-Jameely",
+  "license": "MIT"
+}

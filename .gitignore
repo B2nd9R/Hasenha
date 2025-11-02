@@ -20,3 +20,6 @@ Thumbs.db
 
 # Files and folders to ignore
 hasenha-extension
+blogs/*
+*blog.*
+*article.*

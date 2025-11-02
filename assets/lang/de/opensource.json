@@ -1,0 +1,11 @@
+{
+	"title": "Open-Source-Projekt",
+	"description": "Hasenha ist ein Open-Source-Projekt. Jeder kann den Code einsehen, zur Entwicklung beitragen und Fehler melden",
+	"feature1_title": "Code-Überprüfung",
+	"feature1_desc": "Jeder kann den Quellcode überprüfen und die Sicherheit sicherstellen",
+	"feature2_title": "Beitragen",
+	"feature2_desc": "Tragen Sie zur Projektentwicklung bei und fügen Sie neue Funktionen hinzu",
+	"feature3_title": "Fehler melden",
+	"feature3_desc": "Helfen Sie uns, das Tool zu verbessern, indem Sie Probleme melden",
+	"github_button": "Code auf GitHub ansehen"
+}

@@ -9,7 +9,7 @@ SPDX-License-Identifier: MIT
 ## 📝 معلومات الرخصة
 
 **اسم المشروع:** حصّنها | Hasenha - مولد كلمات المرور الآمن  
-**المالك الحقوقي:** © 2025 بندر الجميلي (Bandar Aljameely)  
+**المالك الحقوقي:** © 2025 بندر الجميلي (Bandar Al jameely)  
 **الإصدار:** 1.0.0  
 **تاريخ الإصدار:** اكتوبر 2025
 
@@ -33,7 +33,7 @@ SPDX-License-Identifier: MIT
 
 ### MIT License
 
-Copyright (c) 2025 Bandar Aljameely
+Copyright (c) 2025 Bandar Al jameely
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

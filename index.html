@@ -255,6 +255,63 @@
       </div>
     </section>
 
+  <!-- Live Stats Section -->
+  <section class="live-stats-section" data-aos="fade-up">
+    <h3 class="section-title" data-i18n="landing.live_stats_title">
+      <i class="fas fa-chart-line"></i>
+      إحصائيات حصّنها الحية
+    </h3>
+    
+    <div class="live-stats-grid">
+      <div class="live-stat-card" data-aos="zoom-in" data-aos-delay="100">
+        <div class="live-stat-icon">
+          <i class="fas fa-bolt"></i> <!-- أيقونة برق - للإشارة للسرعة -->
+        </div>
+        <div class="live-stat-content">
+          <div class="live-stat-number" id="generatedCount">0</div>
+          <div class="live-stat-label" data-i18n="landing.live_stat1_label">كلمة مرور مُولدة</div>
+        </div>
+        <div class="live-stat-trend up">
+          <i class="fas fa-arrow-up"></i>
+          <span data-i18n="landing.live_trend_live">مباشر</span>
+        </div>
+      </div>
+      
+      <div class="live-stat-card" data-aos="zoom-in" data-aos-delay="200">
+        <div class="live-stat-icon">
+          <i class="fas fa-search"></i> <!-- أيقونة بحث - للإشارة للفحص -->
+        </div>
+        <div class="live-stat-content">
+          <div class="live-stat-number" id="checkedCount">0</div>
+          <div class="live-stat-label" data-i18n="landing.live_stat2_label">كلمة مرور مُفحوصة</div>
+        </div>
+        <div class="live-stat-trend up">
+          <i class="fas fa-arrow-up"></i>
+          <span data-i18n="landing.live_trend_live">مباشر</span>
+        </div>
+      </div>
+      
+      <div class="live-stat-card" data-aos="zoom-in" data-aos-delay="300">
+        <div class="live-stat-icon">
+          <i class="fas fa-user-shield"></i> <!-- أيقونة مستخدم محمي -->
+        </div>
+        <div class="live-stat-content">
+          <div class="live-stat-number" id="totalUsers">1,000+</div>
+          <div class="live-stat-label" data-i18n="landing.live_stat3_label">مستخدم واثق</div>
+        </div>
+        <div class="live-stat-trend stable">
+          <i class="fas fa-check"></i>
+          <span data-i18n="landing.live_trend_growing">في تزايد</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="stats-update-info">
+      <i class="fas fa-sync-alt"></i>
+      <span data-i18n="landing.stats_update_info">يتم تحديث الإحصائيات تلقائياً</span>
+    </div>
+  </section>
+
     <!-- CTA Section -->
     <section class="cta-section" data-aos="fade-up">
       <div class="cta-content">
@@ -325,6 +382,36 @@
           </span>
       </p>
   </footer>
+
+  <!-- Language Modal (النافذة المنبثقة لاختيار اللغة) -->
+  <div id="languageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2 data-i18n="common.language_modal_title">اختر لغتك</h2>
+      <div class="language-options">
+        <button class="lang-option" data-lang="ar">
+          <span class="flag-icon">🇸🇦</span>
+          العربية
+        </button>
+        <button class="lang-option" data-lang="en">
+          <span class="flag-icon">🇺🇸</span>
+          English
+        </button>
+        <button class="lang-option" data-lang="fr">
+          <span class="flag-icon">🇫🇷</span>
+          Français
+        </button>
+        <button class="lang-option" data-lang="de">
+          <span class="flag-icon">🇩🇪</span>
+          Deutsch
+        </button>
+        <button class="lang-option" data-lang="es">
+          <span class="flag-icon">🇪🇸</span>
+          Español
+        </button>
+      </div>
+    </div>
+  </div>
 
   <!-- AOS JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>

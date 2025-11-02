@@ -1,0 +1,18 @@
+{
+	"nav_home": "Inicio",
+	"nav_generator": "Generador",
+	"nav_check": "Verificador",
+	"nav_blog": "Blog",
+	"nav_privacy": "Privacidad",
+	"nav_faq": "Preguntas Frecuentes",
+	"nav_about": "Acerca del Desarrollador",
+	"theme_toggle": "Cambiar Tema",
+	"language_toggle": "Cambiar Idioma",
+	"footer_text": "Hecho con cuidado",
+	"footer_by": "por",
+	"footer_bandar": "Bandar Al jameely",
+	"toast_copied": "¡Copiado con éxito!",
+	"toast_error": "¡Ocurrió un error!",
+	"copy_title": "Copiar",
+	"refresh_title": "Generar nuevo"
+}
