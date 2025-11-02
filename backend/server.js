@@ -413,6 +413,14 @@ app.get('/api/system/info', (req, res) => {
   });
 });
 
+// 🔄 معالجة طلبات HEAD للروت الرئيسي فقط
+app.head('/', (req, res) => {
+  res.setHeader('X-Hasenha-Server', 'v2.0.0');
+  res.setHeader('X-API-Version', '1.0.0');
+  res.setHeader('Content-Type', 'text/html; charset=utf-8');
+  res.status(200).end();
+});
+
 // ❌ معالجة المسارات غير الموجودة
 app.use('*', (req, res) => {
   const fs = require('fs');
